@@ -1,0 +1,11 @@
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    username: root
+    password: 01B17d5379bc
+    url: jdbc:mysql://149.129.105.85:3306/mybatis?useUnicode=true&characterEncoding=UTF-8
+mybatis:
+  mapper-locations: classpath:mapper/*.xml,classpath*:com/bruce/**/mapper/*.xml
+  type-aliases-package: com.bruce.mybatisspringboot.model
+
+logging.level.root: trace
